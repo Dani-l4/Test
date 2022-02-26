@@ -1,0 +1,7 @@
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+.vs
+/node_modules
+app/css/
