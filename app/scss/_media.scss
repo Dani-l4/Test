@@ -1,0 +1,111 @@
+@media (max-width: 1139px){
+   .products__inner{
+      grid-template-columns: repeat(2,1fr);
+   }
+   .products{
+      margin-left: 400px;
+   }
+   .addProduct{
+      width: 374px;
+      height: auto;
+   }
+   .addProduct__form{
+      height: auto;
+      label{
+         font-size: 14px;
+         line-height: 15px;
+         display: block;
+         margin-bottom: 8px;
+      }
+      input::placeholder{
+         font-size: 16px;
+         line-height: 18px;
+      }
+      textarea::placeholder{
+         font-size: 16px;
+         line-height: 18px;
+      }
+      button{
+         font-size: 14px;
+      }
+   }
+}
+@media (max-width: 950px){
+   .products{
+      margin: 0 auto;
+   }
+   .addProduct{
+      width: 100%;
+      margin-bottom: 40px;
+      position: relative;
+   }
+}
+@media (max-width: 644px){
+   .addProduct__form{
+      height: auto;
+      label{
+         font-size: 16px;
+         line-height: 18px;
+         
+      }
+      input::placeholder{
+         font-size: 18px;
+         line-height: 20px;
+      }
+      textarea::placeholder{
+         font-size: 18px;
+         line-height: 20px;
+      }
+      button{
+         padding: 15px 95px;
+         font-size: 16px;
+      }
+      &-row{
+         margin-bottom: 24px;
+         &:last-child{
+            margin-bottom: 28px;
+         }
+      }
+   }
+   .product{
+      &__name{
+         font-size: 22px;
+      }
+      &__description{
+         font-size: 18px;
+      }
+      &__price{
+         font-size: 26px;
+      }
+   }
+}
+@media (max-width: 495px){
+   .products__inner{
+      grid-template-columns: repeat(1,1fr);
+   }
+}
+@media (max-width: 421px){
+   .addProduct__form{
+      input::placeholder{
+         font-size: 14px;
+      }
+      textarea::placeholder{
+         font-size: 14px;
+      }
+   }
+}
+@media (max-width: 377px){
+   .addProduct__form{
+      button{
+         padding: 10px 70px;
+      }
+      label{
+         margin-bottom: 8px;
+      }
+   }
+}
+@media (max-width: 333px){
+   #labSource::after{
+      top: 20px;
+   }
+}

@@ -12,10 +12,234 @@
 </head>
 
 <body>
-
+   <section>
+      <div class="container_fluid">
+         <aside class="addProduct">
+            <h1>Добавление товара</h1>
+            <form action="#" class='addProduct__form'>
+               <div class="addProduct__form-row">
+                  <label for="name">Наименование товара</label>
+                  <input type="text" id="name" name='title' placeholder="Введите наименование товара" required
+                     autocomplete="off">
+               </div>
+               <div class="addProduct__form-row">
+                  <label id="labDescr" for="descr">Описание товара</label>
+                  <textarea id="descr" name='descr' placeholder="Введите описание товара" maxlength="120"></textarea>
+               </div>
+               <div class="addProduct__form-row">
+                  <label id='labSource' for="source">Ссылка на изображение товара</label>
+                  <input type="url" id='source' name='imgUrl' required placeholder="Введите ссылку" autocomplete="off">
+               </div>
+               <div class="addProduct__form-row">
+                  <label for="price">Цена товара</label>
+                  <input type="number" id='price' name="price" required placeholder="Введите цену" autocomplete="off">
+               </div>
+               <button id='addItem' type="submit" class='disabled' disabled>Добавить товар</button>
+            </form>
+         </aside>
+         <div class="products">
+            <div class="select-wrapper">
+               <select>
+                  <option value="1">По умолчанию</option>
+                  <option value="2">По цене</option>
+                  <option value="3">По дате</option>
+               </select>
+            </div>
+            <div class="products__inner">
+               <div class="products__item product">
+                  <div class="product__image">
+                     <img src="images/productImage.jpg" alt="Фото товара">
+                  </div>
+                  <div class="product__info">
+                     <div class="product__name">
+                        Наименование товара
+                     </div>
+                     <div class="product__description">
+                        Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание
+                        товара в несколько строк
+                     </div>
+                     <div class="product__price">
+                        10 000 руб.
+                     </div>
+                  </div>
+               </div>
+               <div class="products__item product">
+                  <div class="product__image">
+                     <img src="images/productImage.jpg" alt="Фото товара">
+                  </div>
+                  <div class="product__info">
+                     <div class="product__name">
+                        Наименование товара
+                     </div>
+                     <div class="product__description">
+                        Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание
+                        товара в несколько строк
+                     </div>
+                     <div class="product__price">
+                        10 000 руб.
+                     </div>
+                  </div>
+               </div>
+               <div class="products__item product">
+                  <div class="product__image">
+                     <img src="images/productImage.jpg" alt="Фото товара">
+                  </div>
+                  <div class="product__info">
+                     <div class="product__name">
+                        Наименование товара
+                     </div>
+                     <div class="product__description">
+                        Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание
+                        товара в несколько строк
+                     </div>
+                     <div class="product__price">
+                        10 000 руб.
+                     </div>
+                  </div>
+               </div>
+               <div class="products__item product">
+                  <div class="product__image">
+                     <img src="images/productImage.jpg" alt="Фото товара">
+                  </div>
+                  <div class="product__info">
+                     <div class="product__name">
+                        Наименование товара
+                     </div>
+                     <div class="product__description">
+                        Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание
+                        товара в несколько строк
+                     </div>
+                     <div class="product__price">
+                        10 000 руб.
+                     </div>
+                  </div>
+               </div>
+               <div class="products__item product">
+                  <div class="product__image">
+                     <img src="images/productImage.jpg" alt="Фото товара">
+                  </div>
+                  <div class="product__info">
+                     <div class="product__name">
+                        Наименование товара
+                     </div>
+                     <div class="product__description">
+                        Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание
+                        товара в несколько строк
+                     </div>
+                     <div class="product__price">
+                        10 000 руб.
+                     </div>
+                  </div>
+               </div>
+               <div class="products__item product">
+                  <div class="product__image">
+                     <img src="images/productImage.jpg" alt="Фото товара">
+                  </div>
+                  <div class="product__info">
+                     <div class="product__name">
+                        Наименование товара
+                     </div>
+                     <div class="product__description">
+                        Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание
+                        товара в несколько строк
+                     </div>
+                     <div class="product__price">
+                        10 000 руб.
+                     </div>
+                  </div>
+               </div>
+               <div class="products__item product">
+                  <div class="product__image">
+                     <img src="images/productImage.jpg" alt="Фото товара">
+                  </div>
+                  <div class="product__info">
+                     <div class="product__name">
+                        Наименование товара
+                     </div>
+                     <div class="product__description">
+                        Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание
+                        товара в несколько строк
+                     </div>
+                     <div class="product__price">
+                        10 000 руб.
+                     </div>
+                  </div>
+               </div>
+               <div class="products__item product">
+                  <div class="product__image">
+                     <img src="images/productImage.jpg" alt="Фото товара">
+                  </div>
+                  <div class="product__info">
+                     <div class="product__name">
+                        Наименование товара
+                     </div>
+                     <div class="product__description">
+                        Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание
+                        товара в несколько строк
+                     </div>
+                     <div class="product__price">
+                        10 000 руб.
+                     </div>
+                  </div>
+               </div>
+               <div class="products__item product">
+                  <div class="product__image">
+                     <img src="images/productImage.jpg" alt="Фото товара">
+                  </div>
+                  <div class="product__info">
+                     <div class="product__name">
+                        Наименование товара
+                     </div>
+                     <div class="product__description">
+                        Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание
+                        товара в несколько строк
+                     </div>
+                     <div class="product__price">
+                        10 000 руб.
+                     </div>
+                  </div>
+               </div>
+               <div class="products__item product">
+                  <div class="product__image">
+                     <img src="images/productImage.jpg" alt="Фото товара">
+                  </div>
+                  <div class="product__info">
+                     <div class="product__name">
+                        Наименование товара
+                     </div>
+                     <div class="product__description">
+                        Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание
+                        товара в несколько строк
+                     </div>
+                     <div class="product__price">
+                        10 000 руб.
+                     </div>
+                  </div>
+               </div>
+               <div class="products__item product">
+                  <div class="product__image">
+                     <img src="images/productImage.jpg" alt="Фото товара">
+                  </div>
+                  <div class="product__info">
+                     <div class="product__name">
+                        Наименование товара
+                     </div>
+                     <div class="product__description">
+                        Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание
+                        товара в несколько строк
+                     </div>
+                     <div class="product__price">
+                        10 000 руб.
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
 
    <script src='js/libs.min.js'></script>
-   <script src='js/main.min.js'></script>
+   <script src='js/main.js'></script>
 </body>
 
 </html>

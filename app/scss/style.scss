@@ -2,3 +2,213 @@
 @import 'fonts';
 @import 'reset';
 @import 'global';
+
+.addProduct {
+    position: fixed;
+    height: 100%;
+    width: 332px;
+    h1{
+       font-weight: 600;
+       font-size: 28px;
+       line-height: 35px;
+       color: $mainBlack;
+       margin-bottom: 16px;
+    }
+   // .addProduct__form
+   &__form {
+      background-color: $whiteDark;
+      padding: 24px;
+      height: 440px;
+      border-radius: 4px;
+      label{
+         font-size: 10px;
+         line-height: 13px;
+         color: $dark;
+         position: relative;
+         margin-bottom: 4px;
+         &::after{
+            content:"";
+            position: absolute;  
+            top: 0;
+            right: -5;
+            background-color: #FF8484;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+         }
+      }
+      input{
+         display: block;
+         width: 100%;
+         background-color: $whiteDark;
+         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+         border-radius: 4px;
+         padding: 10px 16px ;
+         &::placeholder{
+            font-size: 12px;
+            line-height: 15px;
+            color: $grey;
+         }
+         &::-webkit-outer-spin-button,
+         &::-webkit-inner-spin-button {
+             -webkit-appearance: none;
+         }
+         &:focus{
+            outline: 1px solid #c2c2c2;
+         }
+      }
+      textarea{   
+         display: block;
+         width: 100%;
+         background-color: $whiteDark;
+         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+         border-radius: 4px;
+         padding: 10px 16px ;
+         resize: none;
+         height: 108px;
+         overflow: hidden;
+         &::placeholder{
+            font-size: 12px;
+            line-height: 15px;
+            color: $grey;
+         }
+         &:focus{
+            border: 1px solid #c2c2c2;
+         }
+      }
+      #labDescr::after{
+         content:"";
+         width: 0;
+         height: 0;
+      }
+ }
+   //addProduct__form-row
+   &__form-row{
+      margin-bottom: 16px;
+      &:last-child{
+         margin-bottom: 24px;
+      }
+   }
+   button{
+      padding: 10px 95px;
+      background-color: #7BAE73;
+      text-align: center;
+      color: #fff;
+      font-family: 'Inter',sans-serif;
+      font-size: 12px;
+      line-height: 15px;
+      border-radius: 10px;
+      letter-spacing: -0.02em;
+      cursor: pointer;
+   }
+   .disabled{
+      background-color: #eee;
+   }
+}
+ .products {
+    position: relative;
+    margin-left: 348px;
+    text-align: right;
+    .select-wrapper{
+      vertical-align: top;
+      display: inline-block;
+      position: relative;
+      &::after{
+         content:'';
+         background-image: url(../images/down-arrow.svg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         position: absolute;
+         top: 50%;
+         transform:translate(-50%,-50%);
+         right: 5px;
+         width: 8px;
+         height: 5px;   
+      }
+    }
+    select{
+      background-color: $whiteDark;
+      padding: 10px 27px 10px 16px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      font-size: 12px;
+      line-height: 15px;
+      color: $grey;
+      appearance: none;
+    }
+   // .products__inner
+   &__inner {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      margin-top: 16px;
+      gap: 16px;
+      text-align: left;
+   }
+ }
+ .product {
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+    display: flex;
+    flex-direction: column;
+    &::after{
+       content:'';
+       width: 16px;
+       height: 16px;
+       background-color: #FF8484;
+       border-radius: 10px;
+       background-image: url(../images/delete.svg);
+       background-repeat: no-repeat;
+       background-position: center;
+       padding: 8px;
+       position: absolute;
+       top: -13px;
+       right: -13px;
+       opacity:0;
+       transition: all .3s;
+    }
+    &:hover::after{
+       opacity: 1;
+    }
+    &:hover{
+       transform: scale(1.05,1.05);
+       z-index: 100;
+    }
+   // .product__image
+   &__image {
+      img{
+         display: block;
+         border-radius: 4px 4px 0px 0px;
+         margin: 0;
+         width: 100%;
+      }
+   }
+   //.product__info
+   &__info{
+      padding: 16px 16px 24px 16px;
+      background-color: $whiteDark;
+      border-radius: 0px 0px 4px 4px;
+      color: $mainBlack;
+   }
+   // .product__name
+   &__name {
+      font-size: 20px;
+      line-height: 25px;
+      font-weight: 600;
+      margin-bottom: 16px;
+   }
+   // .product__description
+   &__description {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 32px;
+   }
+   // .product__price
+   &__price {
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 600;
+   }
+   }
+
+   @import 'media';
